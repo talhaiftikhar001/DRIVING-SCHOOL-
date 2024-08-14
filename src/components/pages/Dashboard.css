@@ -1,0 +1,71 @@
+.dashboard {
+    display: flex;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-line {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    left: 80%;
+    padding: 0;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.header-title {
+    font-size: 20px;
+    color: #333;
+}
+
+.dashboard-welcome {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    z-index: 0;
+
+}
+
+.card {
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    height: 200px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+    z-index: 0; /* Ensure cards don't overlap with the sidebar */
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 1.7em;
+}
